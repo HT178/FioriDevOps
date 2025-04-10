@@ -107,7 +107,7 @@ module.exports = function(config) {
     frameworks: ["ui5", "qunit"],
     ui5: {
       url: "https://ui5.sap.com",
-      mode: "script",
+      mode: "html",
       config: {
         async: true,
         resourceRoots: {
@@ -115,7 +115,7 @@ module.exports = function(config) {
         }
       },
       tests: [
-        "sap/btp/sapui5/test/unit/AllTests"
+        "sap/btp/sapui5/test/unit/unitTests.qunit.html"
       ]
     },
     browsers: ["ChromeHeadlessNoSandbox"],

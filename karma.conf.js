@@ -108,7 +108,7 @@ module.exports = function(config) {
     ui5: {
       url: "https://ui5.sap.com",
       mode: "script",
-      mode: "html",
+      mode: "script",
       config: {
         async: true,
         resourceRoots: {

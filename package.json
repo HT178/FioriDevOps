@@ -24,6 +24,7 @@
     "mbt": "^1.2.29",
     "phantomjs-prebuilt": "^2.1.16",
     "puppeteer": "^24.6.1",
+    "qunit": "^2.24.1",
     "qunitjs": "^2.4.0",
     "rimraf": "^5.0.5",
     "ui5-task-zipper": "^3.1.3"

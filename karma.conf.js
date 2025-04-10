@@ -91,12 +91,12 @@ module.exports = function(config) {
     },
     files: [
       'resources/sap-ui-core.js',
-      'resources/sap/ui/thirdparty/qunit-2.js',  // SAP UI5ライブラリ
+      'resources/sap/ui/thirdparty/qunit-2.js', 
       "resources/sap/ui/qunit/qunit-junit.js",
       "resources/sap/ui/qunit/qunit-coverage.js",
       "resources/sap/ui/thirdparty/sinon.js",
       "resources/sap/ui/thirdparty/sinon-qunit.js",
-      'webapp/test/unit/unitTests.qunit.js'  // 実際のテストスクリプト
+      'webapp/test/unit/unitTests.qunit.js'
     ]
 
 });

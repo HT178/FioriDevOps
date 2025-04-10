@@ -88,7 +88,12 @@ module.exports = function(config) {
         base: 'ChromeHeadless',
         flags: ['--no-sandbox']
       }
-    }
+    },
+    files: [
+      'node_modules/sap-ui-core.js',  // SAP UI5ライブラリ
+      'node_modules/qunit-2.js',      // QUnitライブラリ
+      'webapp/test/unit/unitTests.qunit.js'  // 実際のテストスクリプト
+    ]
 
 });
 };

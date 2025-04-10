@@ -77,10 +77,47 @@
 // };
 
 
+// module.exports = function(config) {
+//   config.set({
+
+//     frameworks: ["qunit"],
+//     browsers: ["ChromeHeadlessNoSandbox"],
+//     singleRun: true,
+//     customLaunchers: {
+//       ChromeHeadlessNoSandbox: {
+//         base: 'ChromeHeadless',
+//         flags: ['--no-sandbox']
+//       }
+//     },
+//     files: [
+//       'resources/sap-ui-core.js',
+//       'resources/sap/ui/thirdparty/qunit-2.js', 
+//       "resources/sap/ui/qunit/qunit-junit.js",
+//       "resources/sap/ui/qunit/qunit-coverage.js",
+//       "resources/sap/ui/thirdparty/sinon.js",
+//       "resources/sap/ui/thirdparty/sinon-qunit.js",
+//       'webapp/test/unit/unitTests.qunit.js'
+//     ]
+
+// });
+// };
+
 module.exports = function(config) {
   config.set({
-
-    frameworks: ["qunit"],
+    frameworks: ["ui5", "qunit", "sinon"],
+    ui5: {
+      url: "https://ui5.sap.com",
+      mode: "script",
+      config: {
+        async: true,
+        resourceRoots: {
+          "sap.btp.sapui5": "./webapp"
+        }
+      },
+      tests: [
+        "sap/btp/sapui5/test/unit/AllTests"
+      ]
+    },
     browsers: ["ChromeHeadlessNoSandbox"],
     singleRun: true,
     customLaunchers: {
@@ -89,15 +126,5 @@ module.exports = function(config) {
         flags: ['--no-sandbox']
       }
     },
-    files: [
-      'resources/sap-ui-core.js',
-      'resources/sap/ui/thirdparty/qunit-2.js', 
-      "resources/sap/ui/qunit/qunit-junit.js",
-      "resources/sap/ui/qunit/qunit-coverage.js",
-      "resources/sap/ui/thirdparty/sinon.js",
-      "resources/sap/ui/thirdparty/sinon-qunit.js",
-      'webapp/test/unit/unitTests.qunit.js'
-    ]
-
-});
+  });
 };

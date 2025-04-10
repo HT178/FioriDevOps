@@ -82,8 +82,14 @@ module.exports = function(config) {
 
     frameworks: ["ui5"],
 
-    browsers: ["ChromeHeadless"],
-    singleRun: true
+    browsers: ["ChromeHeadlessNoSandbox"],
+    singleRun: true,
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    }
 
 });
 };

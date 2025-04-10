@@ -104,7 +104,7 @@
 
 module.exports = function(config) {
   config.set({
-    frameworks: ["ui5", "qunit", "sinon"],
+    frameworks: ["ui5", "qunit"],
     ui5: {
       url: "https://ui5.sap.com",
       mode: "script",

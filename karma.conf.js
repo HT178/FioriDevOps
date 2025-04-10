@@ -104,11 +104,10 @@
 
 module.exports = function(config) {
   config.set({
-    // frameworks: ["ui5", "qunit"],
-    frameworks: ["ui5"],
+    frameworks: ["ui5", "qunit"],
     ui5: {
       url: "https://ui5.sap.com",
-      // mode: "script",
+      mode: "script",
       mode: "html",
       config: {
         async: true,
@@ -116,10 +115,9 @@ module.exports = function(config) {
           "sap.btp.sapui5": "./webapp"
         }
       },
-      // tests: [
-      //   "sap/btp/sapui5/test/unit/unitTests.qunit"
-      // ]
-      testpage: "sap/btp/sapui5/test/unit/unitTests.qunit.html"
+      tests: [
+        "sap/btp/sapui5/test/unit/unitTests.qunit"
+      ]
     },
     browsers: ["ChromeHeadlessNoSandbox"],
     singleRun: true,

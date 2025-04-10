@@ -1,0 +1,192 @@
+<mvc:View controllerName="sap.btp.sapui5.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:upload="sap.m.upload"
+    xmlns:form="sap.ui.layout.form">
+    <Page id="page" showNavButton="true" navButtonPress=".onNavBack" title="会計伝票登録画面">
+        <content>
+            <VBox>
+                <Panel headerText="店舗A第一四半期業績">
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="店舗A 9月売上" />
+                            <Input id="revenueSeptemberStoreA" change=".onIncludedAmountChange"  maxLength="10"/>
+                            <Label text="店舗A 9月コスト" />
+                            <Input id="costSeptemberStoreA" change=".onIncludedAmountChange"  maxLength="10"/>
+                        </form:content>
+                    </form:SimpleForm>
+
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="店舗A 10月売上" />
+                            <Input id="revenueOctoberStoreA" change=".onIncludedAmountChange"  maxLength="10"/>
+                            <Label text="店舗A 10月コスト" />
+                            <Input id="costOctoberStoreA" change=".onIncludedAmountChange"  maxLength="10"/>
+                        </form:content>
+                    </form:SimpleForm>
+
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="店舗A 11月売上" />
+                            <Input id="revenueNovemberStoreA" change=".onIncludedAmountChange"  maxLength="10"/>
+                            <Label text="店舗A 11月コスト" />
+                            <Input id="costNovemberStoreA" change=".onIncludedAmountChange"  maxLength="10"/>
+                        </form:content>
+                    </form:SimpleForm>
+                </Panel>
+
+                <Panel headerText="店舗B第一四半期業績">
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="店舗B 9月売上" />
+                            <Input id="revenueSeptemberStoreB" change=".onIncludedAmountChange"  maxLength="10"/>
+                            <Label text="店舗B 9月コスト" />
+                            <Input id="costSeptemberStoreB" change=".onIncludedAmountChange"  maxLength="10"/>
+                        </form:content>
+                    </form:SimpleForm>
+
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="店舗B 10月売上" />
+                            <Input id="revenueOctoberStoreB" change=".onIncludedAmountChange"  maxLength="10"/>
+                            <Label text="店舗B 10月コスト" />
+                            <Input id="costOctoberStoreB" change=".onIncludedAmountChange"  maxLength="10"/>
+                        </form:content>
+                    </form:SimpleForm>
+
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="店舗B 11月売上" />
+                            <Input id="revenueNovemberStoreB" change=".onIncludedAmountChange"  maxLength="10"/>
+                            <Label text="店舗B 11月コスト" />
+                            <Input id="costNovemberStoreB" change=".onIncludedAmountChange"  maxLength="10"/>
+                        </form:content>
+                    </form:SimpleForm>
+                </Panel>
+                <Panel headerText="全店舗第一四半期業績">
+                    <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="3"
+                        labelSpanL="3"
+                        labelSpanM="3"
+                        labelSpanS="12"
+                        adjustLabelSpan="false"
+                        emptySpanXL="6"
+                        emptySpanL="4"
+                        emptySpanM="4"
+                        emptySpanS="0"
+                        columnsXL="1"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false">
+                        <form:content>
+                            <Label text="売上"/>
+                            <Input id="totalRevenue" enabled="false" visible="false"/>
+                            <Label text="コスト" />
+                            <Input id="totalCost" enabled="false"/>
+                            <Label text="利益率(%)" />
+                            <Input id="percentageRateProfit" enabled="false"/>
+                        </form:content>
+                    </form:SimpleForm>
+                </Panel>
+            </VBox>
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button id="calculateButton" text="計算" press=".onFrontCalculateTotalAchievement"  type="Accept"/>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>

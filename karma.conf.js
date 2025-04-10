@@ -115,7 +115,7 @@ module.exports = function(config) {
         }
       },
       tests: [
-        "sap/btp/sapui5/test/unit/qunitTests.qunit"
+        "sap/btp/sapui5/test/unit/unitTests.qunit"
       ]
     },
     browsers: ["ChromeHeadlessNoSandbox"],

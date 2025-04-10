@@ -172,7 +172,7 @@
                         singleContainerFullSize="false">
                         <form:content>
                             <Label text="売上"/>
-                            <Input id="totalRevenue" enabled="false" visible="false"/>
+                            <Input id="totalRevenue" enabled="false"/>
                             <Label text="コスト" />
                             <Input id="totalCost" enabled="false"/>
                             <Label text="利益率(%)" />

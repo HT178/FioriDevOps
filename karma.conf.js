@@ -80,7 +80,7 @@
 module.exports = function(config) {
   config.set({
 
-    frameworks: ["ui5"],
+    frameworks: ["qunit"],
     browsers: ["ChromeHeadlessNoSandbox"],
     singleRun: true,
     customLaunchers: {

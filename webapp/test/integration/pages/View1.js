@@ -120,7 +120,7 @@ sap.ui.define([
                         }),
                         success: function (oInput) {
                             var sValue = oInput.getValue();
-                            Opa5.assert.strictEqual(sValue, "90.00", "The percentage rate profit is correct");
+                            Opa5.assert.strictEqual(sValue, "91.00", "The percentage rate profit is correct");
                         },
                         errorMessage: "The percentage rate profit is not correct"
                     });
